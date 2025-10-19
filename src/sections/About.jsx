@@ -54,13 +54,13 @@ export default function AboutMe() {
                     {/* Second Column - About Me Description */}
                     <div className="flex flex-col justify-center space-y-6">
                         <div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                            <h3 className="text-2xl text-center md:text-start md:text-3xl font-bold text-white mb-4">
                                 Hi! I'm <span className="text-teal-400">John Kenneth</span>
                             </h3>
-                            <p className="text-base md:text-lg text-slate-300 leading-relaxed mb-4">
+                            <p className="text-base md:text-lg text-slate-300 leading-relaxed mb-4 text-center md:text-start">
                                 A budding web developer passionate about creating useful and interactive applications. I love building small projects and experimenting with different technologies to bring ideas to life.
                             </p>
-                            <p className="text-base md:text-lg text-slate-300 leading-relaxed">
+                            <p className="text-base md:text-lg text-slate-300 leading-relaxed text-center md:text-start">
                                 Currently, I'm focused on improving my full-stack development skills, diving deeper into JavaScript and PHP frameworks, and enhancing my UI/UX design abilities.
                             </p>
                         </div>
