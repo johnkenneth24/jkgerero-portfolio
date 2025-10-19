@@ -10,10 +10,13 @@ function Hero() {
             <div className="container mx-auto px-6 md:px-12 lg:px-20">
                 <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
                     {/* Left Column - Image with Tech Stack */}
-                    <div className="flex justify-center items-center md:justify-end order-2 md:order-1">
-                        <div className="relative flex items-center hero-container">
-                            {/* Tech Stack Icons */}
-                            <div className="hidden md:flex flex-col gap-4 items-center mr-8">
+                    <div className="flex flex-col md:flex-row justify-center items-center md:justify-end order-2 md:order-1 w-full">
+
+                        {/* Image + Vertical Icons for Desktop */}
+                        <div className="relative flex items-center justify-center md:justify-end hero-container w-full md:w-auto">
+
+                            {/* Tech Stack Icons (Desktop) */}
+                            <div className="hidden md:flex flex-col gap-4 items-center mr-6 shrink-0">
                                 <Icon path={mdiLaravel} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
                                 <Icon path={mdiReact} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
                                 <Icon path={mdiVuejs} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
@@ -24,17 +27,17 @@ function Hero() {
                             </div>
 
                             {/* Hero Image */}
-                            <div className="hero-img-border aspect-square">
+                            <div className="hero-img-border aspect-square flex justify-center items-center">
                                 <img
                                     src="/images/hero-image.png"
-                                    alt="John Kenneth Gero"
-                                    className="w-64 sm:w-72 md:w-80 lg:w-[420px] max-w-full h-auto"
+                                    alt="John Kenneth Gerero"
+                                    className="w-56 sm:w-64 md:w-80 lg:w-[420px] h-auto rounded-xl object-cover"
                                 />
                             </div>
                         </div>
 
-                        {/* Mobile Tech Stack - Below Image */}
-                        <div className="md:hidden flex justify-center gap-3 mt-6 flex-wrap max-w-xs mx-auto">
+                        {/* Tech Stack for Mobile (Below Image) */}
+                        <div className="md:hidden flex justify-center gap-3 mt-6 flex-wrap w-full max-w-xs mx-auto">
                             <Icon path={mdiLaravel} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
                             <Icon path={mdiReact} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
                             <Icon path={mdiVuejs} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
@@ -44,6 +47,7 @@ function Hero() {
                             <Icon path={mdiBootstrap} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
                         </div>
                     </div>
+
 
                     {/* Right Column - Text Content */}
                     <div className='hero-text text-center md:text-start order-1 md:order-2'>
@@ -83,8 +87,8 @@ function Hero() {
 
                         {/* CTA Button */}
                         <button className="px-6 py-4 bg-teal-800 hover:bg-teal-900 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center gap-2 mx-auto md:mx-0">
-                            <Icon path={mdiGithub} size={1} /> 
-                            VIEW MY WORK 
+                            <Icon path={mdiGithub} size={1} />
+                            VIEW MY WORK
                             <Icon path={mdiGithub} size={1} />
                         </button>
                     </div>
