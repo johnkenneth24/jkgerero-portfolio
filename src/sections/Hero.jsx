@@ -11,10 +11,8 @@ function Hero() {
                 <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
                     {/* Left Column - Image with Tech Stack */}
                     <div className="flex flex-col md:flex-row justify-center items-center md:justify-end order-2 md:order-1 w-full">
-
                         {/* Image + Vertical Icons for Desktop */}
                         <div className="relative flex items-center justify-center md:justify-end hero-container w-full md:w-auto">
-
                             {/* Tech Stack Icons (Desktop) */}
                             <div className="hidden md:flex flex-col gap-4 items-center mr-6 shrink-0">
                                 <Icon path={mdiLaravel} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
@@ -23,7 +21,7 @@ function Hero() {
                                 <Icon path={mdiLanguageHtml5} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
                                 <Icon path={mdiLanguageCss3} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
                                 <Icon path={mdiTailwind} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
-                                <Icon path={mdiBootstrap} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
+                                
                             </div>
 
                             {/* Hero Image */}
