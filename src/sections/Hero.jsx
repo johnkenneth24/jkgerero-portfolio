@@ -1,6 +1,6 @@
 import '../styles/Hero.css';
 import Icon from '@mdi/react';
-import { mdiGithub, mdiInstagram, mdiLinkedin, mdiLanguageHtml5, mdiLanguageCss3, mdiLaravel, mdiTailwind, mdiBootstrap, mdiReact, mdiVuejs } from '@mdi/js';
+import { mdiGithub, mdiInstagram, mdiLinkedin, mdiLanguageHtml5, mdiLanguageCss3, mdiLaravel, mdiTailwind, mdiReact, mdiVuejs } from '@mdi/js';
 
 const name = "Hi, I'M KEN GERERO";
 
@@ -21,7 +21,6 @@ function Hero() {
                                 <Icon path={mdiLanguageHtml5} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
                                 <Icon path={mdiLanguageCss3} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
                                 <Icon path={mdiTailwind} size={2} className='icon-stacks aspect-square bg-teal-900 p-1 text-white rounded-md hover:scale-110 transition-transform' />
-                                
                             </div>
 
                             {/* Hero Image */}
@@ -32,17 +31,6 @@ function Hero() {
                                     className="w-56 sm:w-64 md:w-80 lg:w-[420px] h-auto rounded-xl object-cover"
                                 />
                             </div>
-                        </div>
-
-                        {/* Tech Stack for Mobile (Below Image) */}
-                        <div className="md:hidden flex justify-center gap-3 mt-6 flex-wrap w-full max-w-xs mx-auto">
-                            <Icon path={mdiLaravel} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
-                            <Icon path={mdiReact} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
-                            <Icon path={mdiVuejs} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
-                            <Icon path={mdiLanguageHtml5} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
-                            <Icon path={mdiLanguageCss3} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
-                            <Icon path={mdiTailwind} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
-                            <Icon path={mdiBootstrap} size={1.5} className='aspect-square bg-teal-900 p-1 text-white rounded-md' />
                         </div>
                     </div>
 
