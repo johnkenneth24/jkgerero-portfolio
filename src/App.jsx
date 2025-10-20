@@ -20,19 +20,11 @@ function App() {
     <main className="min-h-screen">
       <Suspense fallback={<LoadingFallback />}>
         <Hero />
-      </Suspense >
-      <Suspense fallback={<LoadingFallback />}>
         <AboutMe />
-      </Suspense>
-        <Suspense fallback={<LoadingFallback />}>
         <Skills />
-        </Suspense>
-        <Suspense fallback={<LoadingFallback />}>
         <Project />
-        </Suspense>
-        <Suspense fallback={<LoadingFallback />}>
         <Contact />
-        </Suspense>
+      </Suspense>
     </main>
   );
 }
